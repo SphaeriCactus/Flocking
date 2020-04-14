@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Flocking</title>
+
+        <!--
+        Started on: April 12, 2020
+        Finished on: April __, 2020
+
+        Flocking simulation made for a personal school project on digital art.
+
+        Based on: https://www.youtube.com/watch?v=mhjuuHl6qHM
+        -->
+
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <script language = "javascript" type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+        <script language = "javascript" type = "text/javascript" src = "sketch.js"></script>
+        <script language = "javascript" type = "text/javascript" src = "boid.js"></script>
+        <script language = "javascript" type = "text/javascript" src = "flock.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <p>Alignment Force</p>
+            <input class="range-slider" type="range" min="0" max="5" step="0.1" id="alignmentSlider">
+            <p class="slider-value" id="alignmentValue">0</p>
+        </div>
+        
+        <div>
+            <p>Cohesion Force</p>
+            <input class="range-slider" type="range" min="0" max="5" step="0.1" id="cohesionSlider">
+            <p class="slider-value" id="cohesionValue">0</p>
+        </div>
+
+        <div>
+            <p>Separation Force</p>
+            <input class="range-slider" type="range" min="0" max="5" step="0.1" id="separationSlider">
+            <p class="slider-value" id="separationValue">0</p>
+        </div>
+    </body>
+</html>
